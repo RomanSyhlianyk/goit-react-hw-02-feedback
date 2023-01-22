@@ -12,7 +12,6 @@ export class App extends Component {
   };
 
   onLiveFeedback = e => {
-    console.log(e);
     const { name } = e.target;
     this.setState(
       prevState => ({ [name]: prevState[name] + 1 }),
